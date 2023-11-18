@@ -1,10 +1,13 @@
-site_name: Test docs
-site_description: 'A docs test'
-site_author: 'Michael Hausenblas'
-docs_dir: docs/
-repo_name: 'mhausenblas/mkdocs-template'
-repo_url: 'https://github.com/mhausenblas/mkdocs-template'
-nav:
-    - Home: index.md
-theme:
-  name: 'material'
+site_name: XMOJ-Script help center
+site_url: https://xmoj-bbs.tech/docs
+repo_url: https://github.com/XMOJ-Script-dev/docs
+edit_url: edit/main/docs/
+# site_description: 'A docs test'
+# site_author: 'Michael Hausenblas'
+# docs_dir: docs/
+# repo_name: 'mhausenblas/mkdocs-template'
+# repo_url: 'https://github.com/mhausenblas/mkdocs-template'
+# nav:
+#     - Home: index.md
+# theme:
+#   name: 'material'

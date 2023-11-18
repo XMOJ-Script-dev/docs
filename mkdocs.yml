@@ -7,7 +7,9 @@ edit_url: edit/main/docs/
 # docs_dir: docs/
 # repo_name: 'mhausenblas/mkdocs-template'
 # repo_url: 'https://github.com/mhausenblas/mkdocs-template'
-# nav:
-#     - Home: index.md
-# theme:
-#   name: 'material'
+nav:
+    - Home: index.md
+theme:
+  name: 'material'
+  locale: zh
+  include_sidebar: true

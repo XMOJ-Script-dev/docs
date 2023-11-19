@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 帮助文档问题反馈
+    url: https://github.com/XMOJ-Script-dev/XMOJ-Script/issues/new?assignees=PythonSmall-Q&labels=docs%2C+needs-triage&projects=&template=docs.yml&title=%5BDocs%5D
+    about: 我想修改帮助文档

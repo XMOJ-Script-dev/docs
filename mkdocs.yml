@@ -15,7 +15,10 @@ nav:
   - 简介:
     - 首页: index.md
     - 用户协议: eula.md
-    - 
+    - 加入我们: joinus.md
+    - 小明的OJ增强脚本帮助文档:
+      - 图床: functions/pics.md
+      - 自动提交当年代码: functions/auto-handin.mc
 
 # Theme
 theme:

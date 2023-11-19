@@ -14,12 +14,13 @@ copyright: 'Copyright &copy; 2023 - 2023 XMOJ-Script Dev Team'
 nav:
   - 简介:
     - 首页: index.md
+    - 用户协议: eula.md
+    - 
 
 # Theme
 theme:
-  name: null
+  name: material
   custom_dir: overrides
-  custom_dir: 'mkdocs-material/material/templates'
   static_templates:
     - 404.html
   language: 'zh'

@@ -6,7 +6,7 @@ strict: false
 # Repository
 repo_name: 'XMOJ-Script-dev/docs'
 repo_url: 'https://github.com/XMOJ-Script-dev/docs'
-edit_uri: 'https://oi-wiki.org/edit-landing/?ref='
+edit_uri: 'https://docs.xmoj-bbs.tech/edit-landing/?ref='
 
 # Copyright
 copyright: 'Copyright &copy; 2023 - 2023 XMOJ-Script Dev Team'

@@ -52,7 +52,6 @@ theme:
   icon:
     logo: 'material/school'
   features:
-    - content.action.edit
     - navigation.tabs
     - navigation.instant
   font:
@@ -69,12 +68,6 @@ extra:
   copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
   pagetime: 'on'
   githash: ''
-
-extra_javascript:
-  - '_static/js/math-csr.js?math-csr'
-
-extra_css:
-  - '_static/css/extra.css?v=14'
   
 # Extensions
 markdown_extensions:

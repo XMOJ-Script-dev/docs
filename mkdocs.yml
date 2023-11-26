@@ -70,7 +70,12 @@ extra:
   pagetime: 'on'
   githash: ''
 
+extra_javascript:
+  - '_static/js/math-csr.js?math-csr'
 
+extra_css:
+  - '_static/css/extra.css?v=14'
+  
 # Extensions
 markdown_extensions:
   - admonition

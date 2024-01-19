@@ -19,7 +19,7 @@ nav:
     - 加入我们: joinus.md
     - 小明的OJ增强脚本帮助文档:
       - 图床: functions/pics.md
-      - 自动提交当年代码: functions/auto-handin.mc
+      - 自动提交当年代码: functions/auto-handin.md
 
 # Theme
 theme:

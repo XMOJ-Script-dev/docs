@@ -6,10 +6,9 @@ strict: false
 # Repository
 repo_name: 'XMOJ-Script-dev/docs'
 repo_url: 'https://github.com/XMOJ-Script-dev/docs'
-edit_uri: 'https://docs.xmoj-bbs.tech/edit-landing/?ref='
 
 # Copyright
-copyright: 'Copyright &copy; 2023 - 2023 XMOJ-Script Dev Team'
+copyright: 'Copyright &copy; 2023 - 2024 XMOJ-Script Dev Team'
 
 # Contents
 nav:
@@ -20,6 +19,7 @@ nav:
     - 小明的OJ增强脚本帮助文档:
       - 图床: functions/pics.md
       - 自动提交当年代码: functions/auto-handin.md
+      - 讨论区无法登录的解决方案: q&a/discussion.md
 
 # Theme
 theme:

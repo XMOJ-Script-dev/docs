@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="" />
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="edit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ptsq-bot-patch-1" />
+      </map>
+    </option>
   </component>
   <component name="InstanceColorv3">
     <option name="map">
@@ -23,18 +30,45 @@
                   <option name="darkBlue" value="60" />
                   <option name="darkGreen" value="68" />
                   <option name="darkRed" value="206" />
-                  <option name="green" value="61" />
-                  <option name="red" value="219" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
                 </RgbState>
               </option>
               <option name="second">
                 <RgbState>
-                  <option name="blue" value="66" />
+                  <option name="blue" value="65" />
                   <option name="darkBlue" value="65" />
                   <option name="darkGreen" value="126" />
                   <option name="darkRed" value="231" />
-                  <option name="green" value="142" />
-                  <option name="red" value="255" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Writerside/xd.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="2" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="225" />
+                  <option name="darkBlue" value="225" />
+                  <option name="darkGreen" value="149" />
+                  <option name="darkRed" value="56" />
+                  <option name="green" value="149" />
+                  <option name="red" value="56" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="234" />
+                  <option name="darkBlue" value="234" />
+                  <option name="darkGreen" value="197" />
+                  <option name="darkRed" value="81" />
+                  <option name="green" value="197" />
+                  <option name="red" value="81" />
                 </RgbState>
               </option>
             </ColorState>
@@ -55,12 +89,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;Writerside.xmoj-docs.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/seans/Desktop/XMOJ&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
     &quot;writerside.last.selected.productuntitled&quot;: &quot;in&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RunManager">
@@ -72,4 +104,10 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".idea" />
+    <MESSAGE value="id-&gt;xd" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
+  </component>
 </project>

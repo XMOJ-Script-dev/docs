@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="edit" />
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,6 +111,8 @@
     <MESSAGE value=".idea" />
     <MESSAGE value="id-&gt;xd" />
     <MESSAGE value="edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit" />
+    <MESSAGE value="..." />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="sitemap">
-      <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="Dear webmaster" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,6 +116,8 @@
     <MESSAGE value="favicon" />
     <MESSAGE value="change api domain" />
     <MESSAGE value="sitemap" />
-    <option name="LAST_COMMIT_MESSAGE" value="sitemap" />
+    <MESSAGE value="remove useless content" />
+    <MESSAGE value="Dear webmaster" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dear webmaster" />
   </component>
 </project>

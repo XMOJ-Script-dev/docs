@@ -15,6 +15,7 @@
     <sitemap priority="0.35" change-frequency="monthly"/>
     <footer>
         <copyright>2024 XMOJ-Script Dev Team</copyright>
+        <social type="email" href="admin@xmoj-bbs.me">Send us an email</social>
     </footer>
     <build-profile instance="xd">
         <variables>

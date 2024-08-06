@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="https://lp.jetbrains.com/writerside/">
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="Add demo image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +123,7 @@
     <MESSAGE value="Dear webmaster" />
     <MESSAGE value="email" />
     <MESSAGE value="https://lp.jetbrains.com/writerside/" />
-    <option name="LAST_COMMIT_MESSAGE" value="https://lp.jetbrains.com/writerside/" />
+    <MESSAGE value="Add demo image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add demo image" />
   </component>
 </project>

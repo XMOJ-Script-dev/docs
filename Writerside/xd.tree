@@ -6,6 +6,7 @@
                   name="小明的OJ增强脚本帮助文档" start-page="index.md">
 
     <toc-element topic="index.md"/>
+    <toc-element topic="Installation.md"/>
     <toc-element topic="eula.md"/>
     <toc-element topic="ads.md"/>
     <toc-element topic="joinus.md">

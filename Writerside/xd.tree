@@ -10,6 +10,7 @@
     <toc-element topic="ads.md"/>
     <toc-element topic="joinus.md">
     </toc-element>
+    <toc-element topic="Badges.md"/>
     <toc-element toc-title="功能介绍">
         <toc-element topic="rating.md"/>
         <toc-element topic="pics.md"/>

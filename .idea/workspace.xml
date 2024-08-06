@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="email">
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="https://lp.jetbrains.com/writerside/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +18,7 @@
         <entry key="$PROJECT_DIR$" value="ptsq-bot-patch-1" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="InstanceColorv3">
     <option name="map">
@@ -87,28 +88,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Writerside.xmoj-docs.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/seans/Desktop/XMOJ&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
-    &quot;writerside.last.selected.productuntitled&quot;: &quot;in&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/Badges.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/ads.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/eula.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/functions/pics.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/functions/rating.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/index.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/joinus.md&quot;,
-      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/q&amp;a/discussion.md&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Writerside.xmoj-docs.executor": "Run",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/seans/Desktop/XMOJ",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults",
+    "writerside.last.selected.productuntitled": "in"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="xmoj-docs" type="StardustRunConfiguration" factoryName="save-as-zip">
       <option name="folderPath" value="$USER_HOME$/Desktop/XMOJ" />
@@ -133,6 +122,7 @@
     <MESSAGE value="remove useless content" />
     <MESSAGE value="Dear webmaster" />
     <MESSAGE value="email" />
-    <option name="LAST_COMMIT_MESSAGE" value="email" />
+    <MESSAGE value="https://lp.jetbrains.com/writerside/" />
+    <option name="LAST_COMMIT_MESSAGE" value="https://lp.jetbrains.com/writerside/" />
   </component>
 </project>

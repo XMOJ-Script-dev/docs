@@ -4,7 +4,7 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables></variables>
-    <build-profile instance="in">
+    <build-profile instance="xd">
         <variables>
             <noindex-content>false</noindex-content>
         </variables>
@@ -17,6 +17,11 @@
     <build-profile instance="xmoj-docs">
         <variables>
             <noindex-content>true</noindex-content>
+        </variables>
+    </build-profile>
+    <build-profile instance="xd">
+        <variables>
+            <noindex-content>false</noindex-content>
         </variables>
     </build-profile>
 

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="Dear webmaster" />
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="email">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +95,18 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/seans/Desktop/XMOJ&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;,
     &quot;writerside.last.selected.productuntitled&quot;: &quot;in&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: [
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/Badges.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/ads.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/eula.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/functions/pics.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/functions/rating.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/index.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/joinus.md&quot;,
+      &quot;/Users/chenqi/WritersideProjects/docs/Writerside/topics/docs/q&amp;a/discussion.md&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -118,6 +132,7 @@
     <MESSAGE value="sitemap" />
     <MESSAGE value="remove useless content" />
     <MESSAGE value="Dear webmaster" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dear webmaster" />
+    <MESSAGE value="email" />
+    <option name="LAST_COMMIT_MESSAGE" value="email" />
   </component>
 </project>

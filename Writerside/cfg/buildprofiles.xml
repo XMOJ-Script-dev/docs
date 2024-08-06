@@ -10,6 +10,7 @@
         <showDownloadButton>true</showDownloadButton>
         <header-logo>logo.png</header-logo>
         <custom-favicons>logo.png</custom-favicons>
+        <webmaster>admin@xmoj-bbs.me</webmaster>
     </variables>
     <sitemap priority="0.35" change-frequency="monthly"/>
     <footer>

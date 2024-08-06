@@ -5,7 +5,7 @@
 2. 如果报错 `D1 Error` 请刷新重试
 
 补充解决方法：@zhuchenrui2 , 让他手动whitelist
-或手动进入 https://api.xmoj-bbs.tech, 解决 challenge
+或手动进入 https://api.xmoj-bbs.me, 解决 challenge
 
 如果您遇到不理解的服务器返回报错，欢迎在我们的讨论区反馈版中询问！
 

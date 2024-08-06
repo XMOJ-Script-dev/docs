@@ -9,6 +9,9 @@
         <download-title>Get XMOJ-Script</download-title>
         <showDownloadButton>true</showDownloadButton>
     </variables>
+    <footer>
+        <copyright>2024 XMOJ-Script Dev Team</copyright>
+    </footer>
     <build-profile instance="xd">
         <variables>
             <noindex-content>false</noindex-content>

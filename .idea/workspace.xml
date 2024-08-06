@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0295b7b7-ee1b-4dd2-b5cb-2dc078df6736" name="Changes" comment="Copyright">
+      <change afterPath="$PROJECT_DIR$/Writerside/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/cfg/buildprofiles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +113,8 @@
     <MESSAGE value="edit" />
     <MESSAGE value="..." />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Set a color" />
+    <MESSAGE value="Copyright" />
+    <option name="LAST_COMMIT_MESSAGE" value="Copyright" />
   </component>
 </project>

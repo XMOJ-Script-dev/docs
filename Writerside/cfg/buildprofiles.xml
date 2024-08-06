@@ -5,9 +5,10 @@
 
     <variables>
         <primary-color>emerald</primary-color>
-        <download-page>https://xmoj-bbs.me/XMOJ.user.js</download-page>
+        <download-page>https://xmoj-bbs.me</download-page>
         <download-title>Get XMOJ-Script</download-title>
         <showDownloadButton>true</showDownloadButton>
+        <header-logo>logo.png</header-logo>
     </variables>
     <footer>
         <copyright>2024 XMOJ-Script Dev Team</copyright>

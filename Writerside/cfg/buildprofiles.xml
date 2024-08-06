@@ -9,6 +9,7 @@
         <download-title>Get XMOJ-Script</download-title>
         <showDownloadButton>true</showDownloadButton>
         <header-logo>logo.png</header-logo>
+        <custom-favicons>logo.png</custom-favicons>
     </variables>
     <footer>
         <copyright>2024 XMOJ-Script Dev Team</copyright>

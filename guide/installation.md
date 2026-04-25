@@ -65,7 +65,7 @@ Firefox **无需**开启开发者模式，安装 Tampermonkey 后即可直接跳
 
 ## 第三步：安装 XMOJ-Script
 
-<a href="https://github.com/XMOJ-Script-dev/XMOJ-Script/releases/latest/download/XMOJ.user.js" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#1a7f37;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid rgba(31,35,40,0.15);">⬇️ 安装 XMOJ-Script（最新版）</a>
+<a href="https://xmoj-bbs.me/XMOJ.user.js" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#1a7f37;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid rgba(31,35,40,0.15);">⬇️ 安装 XMOJ-Script（最新版）</a>
 
 点击上方按钮后，Tampermonkey 将弹出安装确认页面，确认信息无误后点击「**安装**」即可。
 

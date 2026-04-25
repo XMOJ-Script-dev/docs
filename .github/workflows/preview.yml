@@ -43,7 +43,7 @@ jobs:
         with:
           script: |
             const prNumber = context.payload.pull_request.number;
-            const previewUrl = `http://ftpupload.net/pr-${prNumber}/`;
+            const previewUrl = `http://xmoj-docs.infinityfreeapp.com/pr-${prNumber}/`;
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
             const body = [
               '## 📖 文档预览',

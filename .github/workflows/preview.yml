@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   preview:
-    name: Build & upload preview
+    name: Build & deploy preview
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -28,28 +28,31 @@ jobs:
       - name: Build docs
         run: npm run docs:build
 
-      - name: Upload preview artifact
-        id: upload
-        uses: actions/upload-artifact@v4
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          name: docs-preview-pr${{ github.event.pull_request.number }}
-          path: .vitepress/dist
-          retention-days: 7
+          server: ftpupload.net
+          port: 21
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: .vitepress/dist/
+          server-dir: pr-${{ github.event.pull_request.number }}/
 
       - name: Comment on PR
         uses: actions/github-script@v7
         with:
           script: |
+            const prNumber = context.payload.pull_request.number;
+            const previewUrl = `http://ftpupload.net/pr-${prNumber}/`;
             const runUrl = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const artifactUrl = `${runUrl}#artifacts`;
             const body = [
               '## 📖 文档预览',
               '',
-              `构建成功！点击下方链接下载预览包，解压后用浏览器打开 \`index.html\` 查看效果。`,
+              `构建成功！点击下方链接在线预览文档（PR 关闭后自动删除）。`,
               '',
-              `**[⬇️ 下载预览包（保留 7 天）](${artifactUrl})**`,
+              `**[🔗 在线预览](${previewUrl})**`,
               '',
-              `> 产物名称：\`docs-preview-pr${{ github.event.pull_request.number }}\``,
+              `> 预览地址：\`${previewUrl}\``,
               `> 构建运行：[#${context.runNumber}](${runUrl})`,
             ].join('\n');
 

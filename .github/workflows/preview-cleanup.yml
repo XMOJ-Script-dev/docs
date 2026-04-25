@@ -24,6 +24,6 @@ jobs:
           lftp -c "
             set ftp:ssl-allow no;
             open -u $FTP_USERNAME,$FTP_PASSWORD ftpupload.net;
-            rm -rf pr-$PR_NUMBER/;
+            rm -rf htdocs/pr-$PR_NUMBER/;
             bye
           "

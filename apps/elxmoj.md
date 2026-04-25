@@ -18,15 +18,13 @@
 
 ## 下载安装
 
-当前版本：**v1.1.0**
-
 前往 [GitHub Releases](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/latest) 下载最新版本，或直接点击下方对应平台的链接：
 
 ### Windows
 
 | 安装包类型 | 下载链接 |
 |-----------|---------|
-| 安装程序（推荐） | [ELXMOJ-1.1.0-win-x64.exe](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/download/v1.1.0/ELXMOJ-1.1.0-win-x64.exe) |
+| 安装程序（推荐） | [GitHub Releases →](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/latest) |
 
 下载后双击 `.exe` 文件，按照安装向导完成安装（支持自定义安装目录）。
 
@@ -36,12 +34,11 @@
 
 ### macOS
 
-| 安装包类型 | 下载链接 | 适用架构 |
-|-----------|---------|---------|
-| DMG 镜像 | [ELXMOJ-1.1.0-mac-arm64.dmg](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/download/v1.1.0/ELXMOJ-1.1.0-mac-arm64.dmg) | Apple Silicon (M1/M2/M3) |
-| ZIP 压缩包 | [ELXMOJ-1.1.0-mac-arm64.zip](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/download/v1.1.0/ELXMOJ-1.1.0-mac-arm64.zip) | Apple Silicon (M1/M2/M3) |
+| 安装包类型 | 适用架构 |
+|-----------|---------|
+| DMG 镜像 / ZIP 压缩包 | Apple Silicon (M1/M2/M3) |
 
-打开 `.dmg` 文件，将 `ELXMOJ.app` 拖入"应用程序"文件夹。
+前往 [GitHub Releases](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/latest) 下载对应文件。打开 `.dmg` 文件，将 `ELXMOJ.app` 拖入"应用程序"文件夹。
 
 ::: tip macOS 安全提示
 首次打开时，macOS Gatekeeper 可能提示"无法验证开发者"。请前往**系统设置 → 隐私与安全性**，点击"**仍要打开**"授权运行。
@@ -49,16 +46,16 @@
 
 ### Linux
 
-| 安装包类型 | 下载链接 |
-|-----------|---------|
-| AppImage（推荐） | [ELXMOJ-1.1.0-linux-x86_64.AppImage](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/download/v1.1.0/ELXMOJ-1.1.0-linux-x86_64.AppImage) |
-| tar.gz 压缩包 | [ELXMOJ-1.1.0-linux-x64.tar.gz](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/download/v1.1.0/ELXMOJ-1.1.0-linux-x64.tar.gz) |
+| 安装包类型 | 说明 |
+|-----------|------|
+| AppImage（推荐） | 单文件，无需安装，赋予执行权限后直接运行 |
+| tar.gz 压缩包 | 手动解压后运行 |
 
-使用 AppImage 时，需先赋予执行权限：
+前往 [GitHub Releases](https://github.com/XMOJ-Script-dev/ELXMOJ/releases/latest) 下载对应文件。使用 AppImage 时需先赋予执行权限：
 
 ```bash
-chmod +x ELXMOJ-1.1.0-linux-x86_64.AppImage
-./ELXMOJ-1.1.0-linux-x86_64.AppImage
+chmod +x ELXMOJ-*-linux-x86_64.AppImage
+./ELXMOJ-*-linux-x86_64.AppImage
 ```
 
 ## 应用设置

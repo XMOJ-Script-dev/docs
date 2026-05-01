@@ -1,0 +1,29 @@
+name: PR preview cleanup
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    name: Delete FTP preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
+
+      - name: Remove preview directory from FTP
+        env:
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: |
+          lftp -c "
+            set ftp:ssl-allow no;
+            open -u $FTP_USERNAME,$FTP_PASSWORD ftpupload.net;
+            rm -rf htdocs/pr-$PR_NUMBER/;
+            bye
+          "

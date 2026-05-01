@@ -5,7 +5,7 @@
 ::: tip 快速安装（3 步）
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
 2. 在浏览器扩展管理页面开启**开发者模式**（Chrome / Edge 必须）
-3. 点击 [安装 XMOJ-Script](https://github.com/XMOJ-Script-dev/XMOJ-Script/releases/latest/download/XMOJ.user.js) → 在弹出框中点击「安装」
+3. 点击 [安装 XMOJ-Script](https://xmoj-bbs.me/XMOJ.user.js) → 在弹出框中点击「安装」
 :::
 
 ## 第一步：安装 Tampermonkey

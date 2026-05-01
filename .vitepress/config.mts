@@ -1,4 +1,14 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
+
+const customElements = [
+  'mjx-container', 'mjx-assistive-mml', 'math', 'maction', 'maligngroup',
+  'malignmark', 'menclose', 'merror', 'mfenced', 'mfrac', 'mi', 'mlabeledtr',
+  'mlongdiv', 'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom',
+  'mprescripts', 'mroot', 'mrow', 'ms', 'mscarries', 'mscarry', 'msgroup',
+  'mstack', 'msup', 'msub', 'msubsup', 'mtable', 'mtd', 'mtext', 'mtr',
+  'munder', 'munderover', 'semantics', 'annotation', 'annotation-xml'
+]
 
 export default defineConfig({
   title: '小明的OJ增强脚本',
@@ -8,6 +18,20 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
   ],
+
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3)
+    },
+  },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag),
+      },
+    },
+  },
 
   themeConfig: {
     logo: '/logo.png',

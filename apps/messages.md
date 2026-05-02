@@ -2,7 +2,7 @@
 
 **短消息在线看**是 XMOJ-Script 提供的一个独立网页应用，让您无需安装用户脚本，即可在任意浏览器（包括 **iOS Safari** 和移动端浏览器）中收发 XMOJ 站内短消息。
 
-👉 访问地址：[https://xmoj-bbs.me/messages.html](https://xmoj-bbs.me/messages.html)
+👉 访问地址：[https://xmoj-script.uk/messages.html](https://xmoj-script.uk/messages.html)
 
 ## 功能特点
 
@@ -26,7 +26,7 @@
 
 适用于 **Chrome / Firefox / Edge** 等桌面浏览器。
 
-1. 访问 [https://xmoj-bbs.me/messages.html](https://xmoj-bbs.me/messages.html)
+1. 访问 [https://xmoj-script.uk/messages.html](https://xmoj-script.uk/messages.html)
 2. 将页面上的"🔖 登录到短消息在线看"链接拖拽到浏览器书签栏
 3. 在浏览器中打开 [www.xmoj.tech](https://www.xmoj.tech) 并确保已登录
 4. 点击书签栏中的"🔖 登录到短消息在线看"书签

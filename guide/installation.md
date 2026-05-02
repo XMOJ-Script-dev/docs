@@ -6,7 +6,7 @@
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
 2. 在浏览器扩展管理页面开启**开发者模式** <span style="color: red;">*</span>
 3. 在 Tampermonkey 扩展管理页面开启**允许运行用户脚本** <span style="color: red;">*</span>
-4. 点击 [安装 XMOJ-Script](https://xmoj-bbs.me/XMOJ.user.js) → 在弹出框中点击「安装」
+4. 点击 [安装 XMOJ-Script](https://xmoj-script.uk/XMOJ.user.js) → 在弹出框中点击「安装」
 
 > <span style="color: red;">*</span> 表示对于 Chrome / Edge 138+ 的用户需要进行的操作
 >
@@ -94,8 +94,8 @@ Firefox **无需**开启开发者模式，安装 Tampermonkey 后即可直接跳
 
 ## 4 安装 XMOJ-Script
 
-<a href="https://xmoj-bbs.me/XMOJ.user.js" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#1a7f37;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid rgba(31,35,40,0.15);">最新稳定版（推荐）</a>
-<a href="https://ghpages.xmoj-bbs.me/XMOJ.user.js" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#3092ad;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid rgba(31,35,40,0.15);margin-left:12px;">预览版</a>
+<a href="https://xmoj-script.uk/XMOJ.user.js" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#1a7f37;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid rgba(31,35,40,0.15);">最新稳定版（推荐）</a>
+<a href="https://dev.xmoj-script.uk/XMOJ.user.js" style="display:inline-flex;align-items:center;gap:8px;padding:8px 20px;background:#3092ad;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;font-size:0.95rem;border:1px solid rgba(31,35,40,0.15);margin-left:12px;">预览版</a>
 
 点击上方其中一个按钮后，Tampermonkey 将弹出脚本安装确认页面，确认信息无误后点击「**安装**」即可。
 

@@ -2,7 +2,7 @@
 
 **ELXMOJ** 是基于 [Electron](https://www.electronjs.org/) 构建的小明的OJ桌面客户端。它在原生应用窗口中打开 `www.xmoj.tech`，并**自动注入 XMOJ-Script 用户脚本**，让您无需安装浏览器扩展即可享受脚本的全部增强功能。
 
-- 官网：[https://elxmoj.xmoj-bbs.me](https://elxmoj.xmoj-bbs.me)
+- 官网：[https://elxmoj.xmoj-bbs.me](https://elxmoj.xmoj-script.uk)
 - GitHub：[XMOJ-Script-dev/ELXMOJ](https://github.com/XMOJ-Script-dev/ELXMOJ)
 
 ## 主要功能

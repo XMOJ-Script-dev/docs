@@ -78,8 +78,8 @@ $$\text{评分} = \operatorname{round}\left(3000 \times \left(0.57 \cdot \text{�
 
 | 用户 | 情况 | 评分 |
 |------|------|------|
-| A | 解决 1500 题，平均每题失败 3 次 | <span class="rating yellow">2358</span> |
-| B | 解决 400 题，平均每题失败 1.25 次 | <span class="rating yellow">2166</span> |
+| A | 解决 1500 题，平均每题失败 3 次 | <span class="rating orange">2358</span> |
+| B | 解决 400 题，平均每题失败 1.25 次 | <span class="rating orange">2166</span> |
 | C | 解决 600 题，平均每题失败 7 次 | <span class="rating blue">1672</span> |
 | D | 解决 300 题，从未失败（像是复制的） | <span class="rating green">1431</span> |
 | E | 解决 150 题，平均每题失败 3 次 | <span class="rating cyan">1024</span> |
@@ -93,7 +93,7 @@ $$\text{评分} = \operatorname{round}\left(3000 \times \left(0.57 \cdot \text{�
 | 颜色 | 评分 |
 |------|------|
 | <span class="rating red">红</span> | 2400 及以上 |
-| <span class="rating yellow">橙</span> | 2000–2399 |
+| <span class="rating orange">橙</span> | 2000–2399 |
 | <span class="rating blue">蓝</span> | 1600–1999 |
 | <span class="rating green">绿</span> | 1200–1599 |
 | <span class="rating cyan">青</span> | 800–1199 |

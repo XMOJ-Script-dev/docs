@@ -354,18 +354,13 @@ kbd {
   font-weight: 700;
 }
 
-.rating.red { color: #dc3545; }
-.rating.yellow { color: #b38600; }
-.rating.blue { color: #0d6efd; }
-.rating.green { color: #198754; }
-.rating.cyan { color: #0aa2c0; }
-.rating.gray { color: #6c757d; }
-
-.dark .rating.yellow { color: #ffc107; }
-.dark .rating.blue { color: #6ea8fe; }
-.dark .rating.green { color: #75b798; }
-.dark .rating.cyan { color: #6edff6; }
-.dark .rating.gray { color: #a7acb1; }
+/* 与脚本中的用户名颜色一致，浅色和深色模式共用一套颜色 */
+.rating.red { color: #e8434b; }
+.rating.orange { color: #e8590c; }
+.rating.blue { color: #337cf2; }
+.rating.green { color: #2b9f4f; }
+.rating.cyan { color: #1798b0; }
+.rating.gray { color: #78828c; }
 
 /* 页脚与大纲 */
 .VPFooter {

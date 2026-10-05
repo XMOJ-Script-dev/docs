@@ -1,74 +1,56 @@
-# 贡献指南
+# 贡献代码
 
-欢迎为 XMOJ-Script 贡献代码！在开始之前，请仔细阅读本页内容。我们是一个小团队，非常欢迎来自社区的高质量 PR。
+欢迎提 PR。我们人少、时间也少，下面这些规矩能帮我们更快地合并你的代码。
 
-## 分支说明
+## 先开 Issue
 
-| 分支 | 用途 | PR 目标 |
-|------|------|---------|
-| `master` | 稳定发布版 | ❌ 不接受外部 PR |
-| `dev` | 日常开发 | ❌ 不接受外部 PR |
-| `extern-contrib` | **外部贡献专用** | ✅ 外部开发者请提交到此分支 |
+做新功能之前，先[开一个 Issue](https://github.com/XMOJ-Script-dev/XMOJ-Script/issues/new/choose) 说说你的想法，等我们回复了再动手。修 bug 可以直接提 PR。
 
-::: warning 外部贡献者注意
-请务必将 Pull Request 提交到 **`extern-contrib`** 分支，直接向 `master` 或 `dev` 提交的 PR 将被关闭。
-:::
+我们的原则是**稳定比功能重要**：新功能不能让原来能用的东西坏掉。
 
-## 贡献流程
+## 往哪个分支提
 
-```text
-1. Fork XMOJ-Script-dev/XMOJ-Script
-2. 从 extern-contrib 分支新建功能分支
-   git checkout -b feature/your-feature extern-contrib
-3. 编写代码并在本地测试
-4. 将最新的 extern-contrib 合并到你的分支，解决冲突
-   git fetch origin && git merge origin/extern-contrib
-5. 提交 Pull Request → extern-contrib 分支
+| 分支 | 用途 |
+|------|------|
+| `master` | 正式版，不接受 PR |
+| `dev` | 开发分支，只接受项目成员的 PR |
+| `extern-contrib` | **外部贡献者请提到这里** |
+
+```bash
+git checkout -b my-fix origin/extern-contrib
+# 改代码、在浏览器里测试……
+git fetch origin && git merge origin/extern-contrib   # 提 PR 前先合并最新代码
 ```
 
-## 代码规范
+提到 `master` 或 `dev` 的外部 PR 会被关掉。
 
-### 命名约定
+## 代码风格
 
-| 类型 | 风格 | 示例 |
+| 类型 | 写法 | 例子 |
 |------|------|------|
-| 变量 | `camelCase` | `userId`, `submitCount` |
-| 函数 | `PascalCase` | `GetUserRating`, `SubmitCode` |
-| 类 | `TitleCase` | `RatingSystem`, `ImageUploader` |
+| 变量 | camelCase | `submitCount` |
+| 函数 | PascalCase | `GetUserRating` |
+| 类 | TitleCase | `NavbarStyler` |
 
-> 旧代码中可能存在不符合规范的命名，但**新代码必须严格遵循**上述约定。
+- **不要**跑格式化工具（Prettier 之类），会产生一大堆无关改动。老代码风格不统一，也请保持原样。
+- 用 Bootstrap 的类，少写自定义 CSS。
+- 换行符用 LF。
+- 加新的外部库之前先问我们。
+- 版本号由 CI 自动更新，不要手动改。
 
-### 其他规范
+## 报 bug
 
-- ❌ **不要**运行代码格式化工具（Prettier / clang-format 等），避免引入大量格式噪声
-- ❌ **不要**在未经核心开发者同意的情况下引入新的外部依赖库
-- ✅ 使用 **Bootstrap 5** 样式类，尽量避免编写自定义 CSS
-- ✅ 使用 **Unix 换行符**（LF，`\n`），不要使用 Windows CRLF
-- ✅ 提交 PR 前务必先将 `extern-contrib` 合并到你的分支并解决所有冲突
+到 [GitHub Issues](https://github.com/XMOJ-Script-dev/XMOJ-Script/issues) 反馈，写清楚：
 
-## 新功能开发
+- 发生了什么，你本来想要什么
+- 怎么复现
+- 浏览器和版本，比如 Chrome 140
+- 脚本管理器和版本
+- XMOJ-Script 版本（在 Tampermonkey 控制面板里能看到）
+- 按 <kbd>F12</kbd> 打开控制台，有报错的话截图
 
-在动手写代码前，请先 [开一个 Issue](https://github.com/XMOJ-Script-dev/XMOJ-Script/issues/new/choose) 描述你的想法，等待核心开发者讨论并认可后再开始实现。
-
-**核心原则：稳定 > 功能。** 新功能不能引入回归，不能降低脚本在主流浏览器上的兼容性。
+GitHub Issues 是公开的，不要贴密码、Cookie 或 `PHPSESSID`。
 
 ## 行为准则
 
-- 请**尊重**每一位开发者和社区成员
-- 请**耐心**等待 PR 审核，我们是业余项目，响应时间不固定
-- 请**理解**我们的决定，PR 被拒绝并不代表贡献不被珍视
-- 请遵守 [Code of Conduct](https://github.com/XMOJ-Script-dev/XMOJ-Script/blob/master/CODE_OF_CONDUCT.md)
-
-## 提交 Bug 或建议
-
-发现 Bug 或有功能建议，欢迎在 [GitHub Issues](https://github.com/XMOJ-Script-dev/XMOJ-Script/issues) 中反馈。
-
-提交 Bug 时请提供：
-
-- [ ] 问题的详细描述（实际行为 vs 预期行为）
-- [ ] 可复现的最小步骤
-- [ ] 浏览器名称与版本（如 Chrome 124）
-- [ ] Tampermonkey 版本
-- [ ] XMOJ-Script 版本（控制面板中可查看）
-- [ ] 浏览器开发者工具 Console 截图（如有报错）
-
+互相尊重，耐心等 review。我们是业余项目，回复可能慢。PR 没被合并不代表你的贡献不重要。详见 [Code of Conduct](https://github.com/XMOJ-Script-dev/XMOJ-Script/blob/master/CODE_OF_CONDUCT.md)。

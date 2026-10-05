@@ -11,12 +11,14 @@ const customElements = [
 ]
 
 export default defineConfig({
-  title: '小明的OJ增强脚本',
-  description: '小明的OJ增强脚本用户帮助文档',
+  title: 'XMOJ-Script 文档',
+  description: 'XMOJ-Script（小明的OJ增强脚本）的安装和使用说明',
   lang: 'zh-CN',
 
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.loli.net' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.loli.net/css2?family=Playfair+Display:wght@400;700&family=Source+Serif+4:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap' }],
   ],
 
   markdown: {
@@ -37,8 +39,7 @@ export default defineConfig({
     logo: '/logo.png',
 
     nav: [
-      { text: '首页', link: '/' },
-      { text: '安装指南', link: '/guide/installation' },
+      { text: '安装', link: '/guide/installation' },
       {
         text: '功能介绍',
         items: [
@@ -63,13 +64,8 @@ export default defineConfig({
           { text: 'ELXMOJ 桌面客户端', link: '/apps/elxmoj' },
         ],
       },
-      {
-        text: '更多',
-        items: [
-          { text: '常见问题', link: '/qa/discussion' },
-          { text: '用户协议', link: '/legal/eula' },
-        ],
-      },
+      { text: '常见问题', link: '/qa/discussion' },
+      { text: '官网', link: 'https://www.xmoj-script.uk' },
     ],
 
     sidebar: [
@@ -107,7 +103,9 @@ export default defineConfig({
         text: '更多',
         items: [
           { text: '常见问题', link: '/qa/discussion' },
-          { text: '用户协议', link: '/legal/eula' },
+          { text: '使用条款', link: 'https://www.xmoj-script.uk/terms.html' },
+          { text: '隐私说明', link: 'https://www.xmoj-script.uk/privacy.html' },
+          { text: '未成年人保护', link: 'https://www.xmoj-script.uk/child-protection.html' },
         ],
       },
     ],
@@ -117,13 +115,13 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '基于 GPLv3 许可证发布',
-      copyright: 'Copyright © XMOJ-Script-dev',
+      message: '以 GPL-3.0 开源 · <a href="https://www.xmoj-script.uk/terms.html">使用条款</a> · <a href="https://www.xmoj-script.uk/privacy.html">隐私说明</a>',
+      copyright: '原项目作者 langningchen · 由 XMOJ-Script-dev 维护',
     },
 
     editLink: {
       pattern: 'https://github.com/XMOJ-Script-dev/docs/edit/master/:path',
-      text: '在 GitHub 上编辑此页',
+      text: '在 GitHub 上改这一页',
     },
 
     lastUpdated: {

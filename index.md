@@ -22,7 +22,7 @@ hero:
 
 features:
   - title: 用户评分
-    details: 按 AC 率算出 0–1000 分，用户名按分数显示红、黄、绿、蓝四种颜色。
+    details: 综合做题量、准确度和坚持度算出 0–3000 分，难以刷分；用户名按分数显示六种颜色。
     link: /features/rating
     linkText: 怎么算的
   - title: 粘贴就能发图

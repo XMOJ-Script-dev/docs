@@ -1,540 +1,384 @@
-/**
- * GitHub Primer-inspired theme for VitePress
- * https://primer.style/foundations/color
+/*
+ * XMOJ-Script 文档主题
+ * 与 xmoj-script.uk 官网和脚本的黑白主题（MonochromeUI）保持一致：
+ * 黑白灰配色、衬线字体、直角、无阴影。改动时请同步官网的 site.css。
  */
 
-/* ============================================================
-   Typography
-   ============================================================ */
 :root {
-  --vp-font-family-base:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-    Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji";
-  --vp-font-family-mono:
-    ui-monospace, SFMono-Regular, "SF Mono", Menlo,
-    Consolas, "Liberation Mono", monospace;
+  --mono-black: #000;
+  --mono-white: #fff;
+  --mono-gray-100: #f5f5f5;
+  --mono-gray-200: #e5e5e5;
+  --mono-gray-300: #d4d4d4;
+  --mono-gray-400: #a3a3a3;
+  --mono-gray-500: #737373;
+  --mono-ok: #52c41a;
+  --mono-err: #fe4c61;
+  --mono-warn: #ffa900;
+  --mono-cjk-serif: 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+
+  --vp-font-family-base: 'Source Serif 4', 'Source Serif Pro', Georgia, var(--mono-cjk-serif);
+  --vp-font-family-mono: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+  --mono-font-heading: 'Playfair Display', Georgia, var(--mono-cjk-serif);
 }
 
-/* ============================================================
-   Light Mode — GitHub fg/bg/border palette
-   ============================================================ */
-:root {
-  /* Brand — GitHub Blue */
-  --vp-c-brand-1: #0969da;
-  --vp-c-brand-2: #0550ae;
-  --vp-c-brand-3: #0a3069;
-  --vp-c-brand-soft: rgba(9, 105, 218, 0.08);
-
-  /* Text */
-  --vp-c-text-1: #1f2328;
-  --vp-c-text-2: #59636e;
-  --vp-c-text-3: #848d97;
-
-  /* Background */
-  --vp-c-bg: #ffffff;
-  --vp-c-bg-soft: #f6f8fa;
-  --vp-c-bg-alt: #f6f8fa;
-  --vp-c-bg-elv: #ffffff;
-
-  /* Borders */
-  --vp-c-border: #d0d7de;
-  --vp-c-divider: #d0d7de;
-  --vp-c-gutter: #eaeef2;
-
-  /* Hero buttons — GitHub green */
-  --vp-button-brand-bg: #1a7f37;
-  --vp-button-brand-hover-bg: #1a7f37;
-  --vp-button-brand-active-bg: #116329;
-  --vp-button-brand-border: rgba(31, 35, 40, 0.15);
-  --vp-button-brand-hover-border: rgba(31, 35, 40, 0.15);
-  --vp-button-brand-active-border: rgba(31, 35, 40, 0.15);
-  --vp-button-brand-shadow: 0 1px 0 rgba(31, 35, 40, 0.1);
-  --vp-button-brand-text: #ffffff;
-  --vp-button-brand-hover-text: #ffffff;
-  --vp-button-brand-active-text: #ffffff;
-
-  --vp-button-alt-border: #d0d7de;
-  --vp-button-alt-bg: #f6f8fa;
-  --vp-button-alt-hover-bg: #eaeef2;
-  --vp-button-alt-text: #24292f;
-  --vp-button-alt-hover-text: #24292f;
-
-  /* Custom blocks — GitHub alert colors */
-  --vp-custom-block-tip-bg: #ddf4ff;
-  --vp-custom-block-tip-border: #54aeff;
-  --vp-custom-block-tip-text: #0550ae;
-  --vp-custom-block-tip-code-bg: rgba(31, 111, 235, 0.1);
-
-  --vp-custom-block-info-bg: #f6f8fa;
-  --vp-custom-block-info-border: #d0d7de;
-  --vp-custom-block-info-text: #1f2328;
-  --vp-custom-block-info-code-bg: #eaeef2;
-
-  --vp-custom-block-note-bg: #ddf4ff;
-  --vp-custom-block-note-border: #54aeff;
-  --vp-custom-block-note-text: #0550ae;
-
-  --vp-custom-block-warning-bg: #fff8c5;
-  --vp-custom-block-warning-border: #d4a72c;
-  --vp-custom-block-warning-text: #633c01;
-  --vp-custom-block-warning-code-bg: rgba(212, 167, 44, 0.15);
-
-  --vp-custom-block-danger-bg: #ffebe9;
-  --vp-custom-block-danger-border: #ff8182;
-  --vp-custom-block-danger-text: #82071e;
-  --vp-custom-block-danger-code-bg: rgba(255, 129, 130, 0.15);
-
-  --vp-custom-block-details-bg: #f6f8fa;
-  --vp-custom-block-details-border: #d0d7de;
-  --vp-custom-block-details-text: #1f2328;
-
-  /* Code */
-  --vp-code-bg: #f6f8fa;
-  --vp-code-color: #1f2328;
-  --vp-code-line-highlight-color: rgba(9, 105, 218, 0.06);
-}
-
-/* ============================================================
-   Dark Mode — GitHub dark palette (#0d1117 canvas)
-   ============================================================ */
 .dark {
-  /* Brand */
-  --vp-c-brand-1: #58a6ff;
-  --vp-c-brand-2: #79c0ff;
-  --vp-c-brand-3: #cae8ff;
-  --vp-c-brand-soft: rgba(88, 166, 255, 0.12);
-
-  /* Text */
-  --vp-c-text-1: #e6edf3;
-  --vp-c-text-2: #848d97;
-  --vp-c-text-3: #6e7681;
-
-  /* Background */
-  --vp-c-bg: #0d1117;
-  --vp-c-bg-soft: #161b22;
-  --vp-c-bg-alt: #161b22;
-  --vp-c-bg-elv: #1c2128;
-
-  /* Borders */
-  --vp-c-border: #30363d;
-  --vp-c-divider: #21262d;
-  --vp-c-gutter: #21262d;
-
-  /* Hero buttons */
-  --vp-button-brand-bg: #238636;
-  --vp-button-brand-hover-bg: #2ea043;
-  --vp-button-brand-active-bg: #238636;
-  --vp-button-brand-border: rgba(240, 246, 252, 0.1);
-  --vp-button-brand-shadow: 0 0 0 0;
-  --vp-button-brand-text: #ffffff;
-  --vp-button-brand-hover-text: #ffffff;
-
-  --vp-button-alt-border: #30363d;
-  --vp-button-alt-bg: #21262d;
-  --vp-button-alt-hover-bg: #30363d;
-  --vp-button-alt-text: #c9d1d9;
-  --vp-button-alt-hover-text: #e6edf3;
-
-  /* Custom blocks */
-  --vp-custom-block-tip-bg: rgba(31, 111, 235, 0.1);
-  --vp-custom-block-tip-border: #1f6feb;
-  --vp-custom-block-tip-text: #58a6ff;
-
-  --vp-custom-block-info-bg: rgba(22, 27, 34, 0.8);
-  --vp-custom-block-info-border: #30363d;
-  --vp-custom-block-info-text: #e6edf3;
-
-  --vp-custom-block-warning-bg: rgba(187, 128, 9, 0.1);
-  --vp-custom-block-warning-border: #9e6a03;
-  --vp-custom-block-warning-text: #e3b341;
-  --vp-custom-block-warning-code-bg: rgba(187, 128, 9, 0.2);
-
-  --vp-custom-block-danger-bg: rgba(248, 81, 73, 0.1);
-  --vp-custom-block-danger-border: #da3633;
-  --vp-custom-block-danger-text: #f85149;
-  --vp-custom-block-danger-code-bg: rgba(248, 81, 73, 0.2);
-
-  --vp-custom-block-details-bg: #161b22;
-  --vp-custom-block-details-border: #30363d;
-  --vp-custom-block-details-text: #e6edf3;
-
-  /* Code */
-  --vp-code-bg: #161b22;
-  --vp-code-color: #e6edf3;
+  --mono-black: #e5e5e5;
+  --mono-white: #1a1a1a;
+  --mono-gray-100: #222;
+  --mono-gray-200: #2a2a2a;
+  --mono-gray-300: #404040;
+  --mono-gray-400: #737373;
+  --mono-gray-500: #a3a3a3;
 }
 
-/* ============================================================
-   Navigation
-   ============================================================ */
-.VPNavBar {
-  background-color: var(--vp-c-bg) !important;
-  border-bottom: 1px solid var(--vp-c-border) !important;
+:root,
+.dark {
+  --vp-c-brand-1: var(--mono-black);
+  --vp-c-brand-2: var(--mono-gray-500);
+  --vp-c-brand-3: var(--mono-black);
+  --vp-c-brand-soft: var(--mono-gray-100);
+
+  --vp-c-text-1: var(--mono-black);
+  --vp-c-text-2: var(--mono-gray-500);
+  --vp-c-text-3: var(--mono-gray-400);
+
+  --vp-c-bg: var(--mono-white);
+  --vp-c-bg-soft: var(--mono-gray-100);
+  --vp-c-bg-alt: var(--mono-white);
+  --vp-c-bg-elv: var(--mono-white);
+
+  --vp-c-border: var(--mono-black);
+  --vp-c-divider: var(--mono-gray-200);
+  --vp-c-gutter: var(--mono-gray-200);
+
+  --vp-button-brand-bg: var(--mono-black);
+  --vp-button-brand-hover-bg: var(--mono-white);
+  --vp-button-brand-active-bg: var(--mono-white);
+  --vp-button-brand-border: var(--mono-black);
+  --vp-button-brand-hover-border: var(--mono-black);
+  --vp-button-brand-active-border: var(--mono-black);
+  --vp-button-brand-text: var(--mono-white);
+  --vp-button-brand-hover-text: var(--mono-black);
+  --vp-button-brand-active-text: var(--mono-black);
+
+  --vp-button-alt-bg: var(--mono-white);
+  --vp-button-alt-hover-bg: var(--mono-black);
+  --vp-button-alt-active-bg: var(--mono-black);
+  --vp-button-alt-border: var(--mono-black);
+  --vp-button-alt-hover-border: var(--mono-black);
+  --vp-button-alt-text: var(--mono-black);
+  --vp-button-alt-hover-text: var(--mono-white);
+  --vp-button-alt-active-text: var(--mono-white);
+
+  --vp-code-bg: var(--mono-gray-100);
+  --vp-code-color: var(--mono-black);
+  --vp-code-block-bg: var(--mono-gray-100);
+  --vp-code-line-highlight-color: var(--mono-gray-200);
+
+  --vp-custom-block-tip-bg: var(--mono-white);
+  --vp-custom-block-tip-border: var(--mono-black);
+  --vp-custom-block-tip-text: var(--mono-black);
+  --vp-custom-block-tip-code-bg: var(--mono-gray-100);
+  --vp-custom-block-info-bg: var(--mono-white);
+  --vp-custom-block-info-border: var(--mono-gray-400);
+  --vp-custom-block-info-text: var(--mono-black);
+  --vp-custom-block-info-code-bg: var(--mono-gray-100);
+  --vp-custom-block-warning-bg: var(--mono-white);
+  --vp-custom-block-warning-border: var(--mono-warn);
+  --vp-custom-block-warning-text: var(--mono-black);
+  --vp-custom-block-warning-code-bg: var(--mono-gray-100);
+  --vp-custom-block-danger-bg: var(--mono-white);
+  --vp-custom-block-danger-border: var(--mono-err);
+  --vp-custom-block-danger-text: var(--mono-black);
+  --vp-custom-block-danger-code-bg: var(--mono-gray-100);
+  --vp-custom-block-details-bg: var(--mono-gray-100);
+  --vp-custom-block-details-border: var(--mono-gray-300);
+  --vp-custom-block-details-text: var(--mono-black);
+
+  --vp-home-hero-name-color: var(--mono-black);
+  --vp-local-search-bg: var(--mono-white);
+  --vp-local-search-result-bg: var(--mono-white);
+  --vp-local-search-highlight-bg: var(--mono-black);
+  --vp-local-search-highlight-text: var(--mono-white);
+}
+
+/* 直角、无阴影 */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
   box-shadow: none !important;
 }
 
-.VPNav .divider {
-  display: none !important;
-}
-
-/* ============================================================
-   Sidebar
-   ============================================================ */
-.VPSidebar {
-  background-color: var(--vp-c-bg-soft) !important;
-  border-right: 1px solid var(--vp-c-border) !important;
-  box-shadow: none !important;
-}
-
-.VPSidebarItem.level-0 > .item > .text {
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.VPSidebarItem.is-active > .item > .link > .text {
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-}
-
-/* ============================================================
-   Content — GitHub Markdown rendering
-   ============================================================ */
-
-/* H1 & H2 get bottom borders like GitHub */
+/* 标题用 Playfair Display */
 .vp-doc h1,
-.vp-doc h2 {
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid var(--vp-c-border);
-  font-weight: 600;
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4,
+.VPHero .name,
+.VPHero .text,
+.VPFeature .title,
+.VPNavBarTitle .title {
+  font-family: var(--mono-font-heading);
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .vp-doc h1 {
-  font-size: 2em;
-  margin-top: 0;
+  font-size: 2.25rem;
+  line-height: 1.25;
 }
 
-.vp-doc h3 {
-  font-size: 1.1em;
-  font-weight: 600;
+.vp-doc h2 {
+  border-top: none;
+  border-bottom: 2px solid var(--mono-black);
+  padding-top: 0;
+  padding-bottom: 0.3em;
+  margin-top: 2.5em;
 }
 
-/* Links */
+/* 链接：黑字 + 灰色下划线，悬停变黑 */
 .vp-doc a {
-  color: var(--vp-c-brand-1);
-  font-weight: 450;
+  color: var(--mono-black);
+  font-weight: 500;
   text-decoration: none;
+  border-bottom: 1px solid var(--mono-gray-400);
+  transition: border-color 100ms ease;
 }
 
 .vp-doc a:hover {
-  text-decoration: underline;
+  color: var(--mono-black);
+  border-bottom-color: var(--mono-black);
 }
 
-/* Inline code */
-.vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
-  background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-border);
-  border-radius: 6px;
-  padding: 0.2em 0.4em;
-  font-size: 85%;
-  color: var(--vp-c-text-1);
+.vp-doc a.header-anchor {
+  border-bottom: none;
+}
+
+/* 导航栏与侧边栏 */
+.VPNavBar,
+.VPNavBar.has-sidebar .content-body,
+.VPNavBar:not(.home) .divider-line {
+  background-color: var(--mono-white) !important;
+}
+
+.VPNavBar {
+  border-bottom: 2px solid var(--mono-black);
+}
+
+.VPNavBar .divider {
+  display: none;
+}
+
+.VPNavBarTitle .logo {
+  width: auto;
+  height: 28px;
+}
+
+.VPSidebar {
+  border-right: 1px solid var(--mono-gray-200);
+}
+
+.VPSidebarItem.level-0 > .item > .text {
   font-family: var(--vp-font-family-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mono-gray-500);
 }
 
-/* Code blocks */
+.VPSidebarItem.is-active > .item > .link > .text {
+  color: var(--mono-black);
+  font-weight: 700;
+}
+
+.VPSidebarItem.is-active > .item .indicator {
+  background-color: var(--mono-black);
+}
+
+/* 行内代码与代码块 */
+.vp-doc :not(pre, h1, h2, h3, h4, h5, h6) > code {
+  color: var(--mono-black);
+  background-color: var(--mono-gray-100);
+  font-size: 0.875em;
+}
+
 .vp-doc div[class*='language-'] {
-  border: 1px solid var(--vp-c-border) !important;
-  border-radius: 6px !important;
-  background-color: var(--vp-code-bg) !important;
+  border: 1px solid var(--mono-gray-300);
 }
 
-.vp-doc div[class*='language-'] > button.copy {
-  border-radius: 6px;
-  border: 1px solid var(--vp-c-border);
-  background: var(--vp-c-bg);
-}
-
-/* Tables */
+/* 表格 */
 .vp-doc table {
-  border-collapse: collapse;
+  display: table;
   width: 100%;
-  font-size: 0.95em;
+  border-collapse: collapse;
 }
 
-.vp-doc thead th {
-  background-color: var(--vp-c-bg-soft);
+.vp-doc tr {
+  background-color: transparent !important;
+  border-top: none;
+}
+
+.vp-doc th {
+  background-color: var(--mono-black);
+  color: var(--mono-white);
   font-weight: 600;
   text-align: left;
 }
 
-.vp-doc tr:nth-child(2n) {
-  background-color: var(--vp-c-bg-soft);
-}
-
 .vp-doc th,
 .vp-doc td {
-  border: 1px solid var(--vp-c-border);
-  padding: 6px 13px;
+  border: 1px solid var(--mono-gray-300);
 }
 
-/* Blockquotes */
-.vp-doc blockquote {
-  border-left: 4px solid var(--vp-c-border);
-  color: var(--vp-c-text-2);
-  background: transparent;
-  padding: 0 1em;
-  margin: 1em 0;
-  border-radius: 0;
+.vp-doc th {
+  border-color: var(--mono-black);
 }
 
-.vp-doc blockquote > p {
-  color: var(--vp-c-text-2);
+.vp-doc tbody tr:hover {
+  background-color: var(--mono-gray-100) !important;
 }
 
-/* HR */
-.vp-doc hr {
-  border-color: var(--vp-c-border);
-  margin: 24px 0;
-}
-
-/* ============================================================
-   Custom Blocks — GitHub alert style
-   ============================================================ */
+/* 提示块：白底 + 左边框，和官网的 alert-mono 一样 */
 .custom-block {
-  border-radius: 6px;
-  border: 1px solid;
+  border-width: 0 0 0 4px;
+  border-style: solid;
   padding: 12px 16px;
-  font-size: 0.95em;
-}
-
-.custom-block.tip {
-  background-color: var(--vp-custom-block-tip-bg);
-  border-color: var(--vp-custom-block-tip-border);
-  color: var(--vp-custom-block-tip-text);
-}
-
-.custom-block.info {
-  background-color: var(--vp-custom-block-info-bg);
-  border-color: var(--vp-custom-block-info-border);
-  color: var(--vp-custom-block-info-text);
-}
-
-.custom-block.warning {
-  background-color: var(--vp-custom-block-warning-bg);
-  border-color: var(--vp-custom-block-warning-border);
-  color: var(--vp-custom-block-warning-text);
-}
-
-.custom-block.danger {
-  background-color: var(--vp-custom-block-danger-bg);
-  border-color: var(--vp-custom-block-danger-border);
-  color: var(--vp-custom-block-danger-text);
 }
 
 .custom-block.details {
-  background-color: var(--vp-custom-block-details-bg);
-  border-color: var(--vp-custom-block-details-border);
-  color: var(--vp-custom-block-details-text);
+  border-width: 1px;
 }
 
-.custom-block-title {
-  font-weight: 600;
-  margin-bottom: 4px;
+.custom-block .custom-block-title {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
 }
 
-/* ============================================================
-   Home Page — Feature cards
-   ============================================================ */
-.VPHome .VPFeatures .VPFeature {
-  border: 1px solid var(--vp-c-border) !important;
-  border-radius: 6px !important;
-  background-color: var(--vp-c-bg) !important;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease !important;
-}
-
-.VPHome .VPFeatures .VPFeature:hover {
-  border-color: var(--vp-c-brand-1) !important;
-  box-shadow: 0 0 0 3px var(--vp-c-brand-soft) !important;
-  text-decoration: none !important;
-}
-
-.VPHome .VPFeatures .VPFeature .title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-}
-
-.VPHome .VPFeatures .VPFeature .details {
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-}
-
-/* Hero */
-.VPHero .name {
-  background: none !important;
-  -webkit-text-fill-color: var(--vp-c-text-1) !important;
-  font-weight: 700;
-}
-
-.VPHero .text {
-  color: var(--vp-c-text-2) !important;
-  font-size: 1.6rem !important;
-  font-weight: 400 !important;
-}
-
-.VPHero .tagline {
-  color: var(--vp-c-text-2) !important;
-  font-size: 1.05rem !important;
-}
-
-/* Round the hero image used on index.md (demo.png) */
-.VPHero img[src="/demo.png"],
-.VPHero .hero img {
-  border-radius: 12px;
-  overflow: hidden;
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-  border: 1px solid var(--vp-c-border);
-}
-
-/* ============================================================
-   Badges (inline pill labels in content)
-   ============================================================ */
-.gh-badge {
-  display: inline-block;
-  padding: 0.12em 0.55em;
-  font-size: 0.75rem;
-  font-weight: 500;
-  line-height: 1.5;
-  border-radius: 2em;
-  border: 1px solid var(--vp-c-border);
-  background-color: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-2);
-  vertical-align: middle;
-  font-family: var(--vp-font-family-base);
-}
-
-.gh-badge.green {
-  background-color: #dafbe1;
-  border-color: rgba(26, 127, 55, 0.4);
-  color: #116329;
-}
-
-.gh-badge.blue {
-  background-color: #ddf4ff;
-  border-color: rgba(9, 105, 218, 0.4);
-  color: #0550ae;
-}
-
-.gh-badge.yellow {
-  background-color: #fff8c5;
-  border-color: rgba(154, 103, 0, 0.4);
-  color: #6e4500;
-}
-
-.dark .gh-badge.green {
-  background-color: rgba(46, 160, 67, 0.15);
-  border-color: rgba(46, 160, 67, 0.4);
-  color: #3fb950;
-}
-
-.dark .gh-badge.blue {
-  background-color: rgba(31, 111, 235, 0.15);
-  border-color: rgba(31, 111, 235, 0.4);
-  color: #58a6ff;
-}
-
-.dark .gh-badge.yellow {
-  background-color: rgba(187, 128, 9, 0.15);
-  border-color: rgba(187, 128, 9, 0.4);
-  color: #e3b341;
-}
-
-/* ============================================================
-   Announcement bar / top banner
-   ============================================================ */
-.VPLocalSearchBox {
-  border-radius: 6px !important;
-}
-
-/* ============================================================
-   Footer
-   ============================================================ */
-.VPFooter {
-  border-top: 1px solid var(--vp-c-border) !important;
-  background-color: var(--vp-c-bg-soft) !important;
-}
-
-/* ============================================================
-   Scrollbar (subtle, GitHub-like)
-   ============================================================ */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--vp-c-border);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--vp-c-text-3);
-}
-
-/* ============================================================
-   Keyboard shortcuts <kbd>
-   ============================================================ */
+/* kbd */
 kbd {
   display: inline-block;
-  padding: 3px 6px;
-  font-size: 0.8em;
+  padding: 1px 6px;
   font-family: var(--vp-font-family-mono);
-  line-height: 1.4;
-  color: var(--vp-c-text-1);
-  background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-border);
-  border-bottom-color: var(--vp-c-text-3);
-  border-radius: 6px;
-  box-shadow: inset 0 -1px 0 var(--vp-c-text-3);
+  font-size: 0.8em;
+  line-height: 1.5;
+  color: var(--mono-white);
+  background-color: var(--mono-black);
   white-space: nowrap;
 }
 
-/* ============================================================
-   Outline / TOC
-   ============================================================ */
-.VPDocOutlineItem a.outline-link {
-  color: var(--vp-c-text-2);
-  font-size: 0.85em;
+/* 首页 */
+.VPHero .name {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.VPHero .text {
+  color: var(--mono-black);
+}
+
+.VPHero .tagline {
+  color: var(--mono-gray-500);
+}
+
+.VPHero .image-container img,
+.VPHero .VPImage.image-src {
+  border: 2px solid var(--mono-black);
+}
+
+.VPHero .image-bg {
+  display: none;
+}
+
+.VPFeature {
+  border: 1px solid var(--mono-black) !important;
+  background-color: var(--mono-white) !important;
+  transition: background-color 100ms ease;
+}
+
+.VPFeature.link:hover {
+  background-color: var(--mono-gray-100) !important;
+}
+
+.VPFeature .details {
+  color: var(--mono-gray-500);
+}
+
+.VPFeature .link-text-value {
+  color: var(--mono-black);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.8rem;
+}
+
+/* 按钮 */
+.VPButton {
+  font-family: var(--vp-font-family-mono);
+  font-weight: 500;
+  border-width: 2px;
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+/* 文档里的按钮链接（安装页用） */
+.vp-doc a.mono-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 4px 12px 4px 0;
+  font-family: var(--vp-font-family-mono);
+  font-weight: 500;
+  border: 2px solid var(--mono-black);
+  background-color: var(--mono-black);
+  color: var(--mono-white);
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+.vp-doc a.mono-btn:hover {
+  background-color: var(--mono-white);
+  color: var(--mono-black);
+}
+
+.vp-doc a.mono-btn.alt {
+  background-color: var(--mono-white);
+  color: var(--mono-black);
+}
+
+.vp-doc a.mono-btn.alt:hover {
+  background-color: var(--mono-black);
+  color: var(--mono-white);
+}
+
+/* 评分颜色示例 */
+.rating {
+  font-weight: 700;
+}
+
+.rating.red { color: #dc3545; }
+.rating.yellow { color: #b38600; }
+.rating.green { color: #198754; }
+.rating.blue { color: #0aa2c0; }
+
+.dark .rating.yellow { color: #ffc107; }
+.dark .rating.green { color: #75b798; }
+.dark .rating.blue { color: #6edff6; }
+
+/* 页脚与大纲 */
+.VPFooter {
+  border-top: 2px solid var(--mono-black) !important;
+  background-color: var(--mono-white) !important;
 }
 
 .VPDocOutlineItem a.outline-link:hover,
 .VPDocOutlineItem a.outline-link.active {
-  color: var(--vp-c-brand-1);
-}
-
-/* ============================================================
-   Edit link & last-updated
-   ============================================================ */
-.edit-link-button {
-  color: var(--vp-c-brand-1) !important;
-}
-
-/* ============================================================
-   Step list — numbered steps styled like GitHub docs
-   ============================================================ */
-.vp-doc ol > li {
-  margin-bottom: 0.5em;
-}
-
-.vp-doc ol > li::marker {
-  color: var(--vp-c-text-2);
+  color: var(--mono-black);
   font-weight: 600;
+}
+
+.VPDocAsideOutline .outline-marker {
+  background-color: var(--mono-black);
+}
+
+.vp-doc img {
+  border: 1px solid var(--mono-gray-300);
 }

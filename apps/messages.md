@@ -1,89 +1,48 @@
 # 短消息在线看
 
-**短消息在线看**是 XMOJ-Script 提供的一个独立网页应用，让您无需安装用户脚本，即可在任意浏览器（包括 **iOS Safari** 和移动端浏览器）中收发 XMOJ 站内短消息。
+不装脚本，也能在任何浏览器里收发小明的OJ的短消息，手机上也行。
 
-👉 访问地址：[https://xmoj-script.uk/messages.html](https://xmoj-script.uk/messages.html)
+打开：[www.xmoj-script.uk/messages.html](https://www.xmoj-script.uk/messages.html)
 
-## 功能特点
+能做的事：看联系人和对话、回复、给任何人发新消息、粘贴图片、搜索联系人，支持暗色模式。
 
-| 功能 | 说明 |
-|------|------|
-| 📱 跨平台 | 支持所有主流浏览器，包括 iOS Safari、Android 浏览器 |
-| 🔐 无需安装脚本 | 纯网页应用，不依赖 Tampermonkey |
-| 🔍 联系人搜索 | 实时搜索过滤联系人列表 |
-| ✉️ 发送新消息 | 向任意用户发起新对话 |
-| 💬 查看对话 | 以线程方式展示和收发消息 |
-| 🖼️ 图片支持 | 在消息中粘贴图片自动上传发送 |
-| 🏷️ 用户徽章 | 自动展示联系人的 Badge/Tag |
-| 🌙 深色模式 | 支持浅色/深色/跟随系统三种主题 |
-| ↕️ 自动滚动 | 查看对话时自动滚动到最新消息 |
+## 登录
 
-## 登录方式
+它需要你在小明的OJ上的登录凭证 `PHPSESSID`。有两种方式拿到。
 
-短消息在线看提供两种登录方式，请根据您所在的设备选择：
-
-### 方式一：书签登录（仅限桌面浏览器）
-
-适用于 **Chrome / Firefox / Edge** 等桌面浏览器。
-
-1. 访问 [https://xmoj-script.uk/messages.html](https://xmoj-script.uk/messages.html)
-2. 将页面上的"🔖 登录到短消息在线看"链接拖拽到浏览器书签栏
-3. 在浏览器中打开 [www.xmoj.tech](https://www.xmoj.tech) 并确保已登录
-4. 点击书签栏中的"🔖 登录到短消息在线看"书签
-5. 浏览器将自动跳转并完成登录
-
-::: tip 最简单的方式
-对于桌面用户，书签登录是最快捷的方式，无需手动查找 Cookie。
+::: warning PHPSESSID 就相当于你的密码
+拿到它的人可以用你的账号登录小明的OJ。不要发给任何人，也不要贴到讨论区或 GitHub 上。
 :::
 
-### 方式二：会话登录（通用，支持移动端）
+### 书签登录（电脑）
 
-需要手动获取 `PHPSESSID` Cookie，适用于**所有设备**（包括手机）。
+最省事的方法。
 
-**在桌面浏览器上获取 PHPSESSID：**
+1. 打开短消息在线看，切到「书签登录」。
+2. 把「登录到短消息在线看」按钮拖到书签栏。
+3. 打开 [www.xmoj.tech](https://www.xmoj.tech)，确认已经登录。
+4. 点一下刚才的书签，会自动跳回来并登录。
 
-1. 在浏览器中打开 [www.xmoj.tech](https://www.xmoj.tech) 并登录
-2. 按 <kbd>F12</kbd> 打开开发者工具 → 切换到"Application"（Chrome/Edge）或"存储"（Firefox）标签
-3. 展开左侧"Cookies" → 找到 `www.xmoj.tech`
-4. 复制 `PHPSESSID` 的值
+### 会话登录（手机和电脑都行）
 
-**在 iOS Safari 上获取（需配合 Mac）：**
+手动复制 `PHPSESSID`，填到「会话登录」里，连同你的用户名一起提交。
 
-1. 在 iPhone/iPad 的 Safari 上打开并登录 [www.xmoj.tech](https://www.xmoj.tech)
-2. 在 Mac 上打开 Safari → 菜单栏"开发（Develop）" → 选择您的 iOS 设备 → 选择 xmoj.tech 页面
-3. 在 Web 检查器中找到并复制 `PHPSESSID`
+**电脑上**：登录 [www.xmoj.tech](https://www.xmoj.tech)，按 <kbd>F12</kbd> 打开开发者工具。Chrome 和 Edge 切到「应用」（Application），Firefox 切到「存储」，在 Cookie → `www.xmoj.tech` 里找到 `PHPSESSID`，复制它的值。
 
-**填写登录信息：**
+**iPhone / iPad**：需要一台 Mac。在 iPhone 的 Safari 里登录小明的OJ，然后在 Mac 的 Safari 里选「开发」→ 你的设备 → xmoj.tech 页面，在网页检查器的「储存空间」里找到 `PHPSESSID`。
 
-1. 在短消息在线看的登录页，选择"**会话登录**"标签
-2. 输入您的 XMOJ 用户名和 `PHPSESSID`
-3. 点击"登录"
+页面上也有每种浏览器的详细步骤。
 
-## 使用说明
+## 用法
 
-### 查看消息
+- **看对话**：点左边的联系人。
+- **回复**：在底部输入，点「发送」。
+- **发新消息**：点「发新消息」，填收件人和内容。
+- **发图片**：在输入框里按 <kbd>Ctrl</kbd>+<kbd>V</kbd>。图片的注意事项见[粘贴发图](../features/image-hosting)。
+- **换主题**：点右上角的主题按钮。
 
-登录后，左侧（或顶部）显示联系人列表，点击联系人即可查看与该用户的完整对话记录。
+## 注意
 
-### 搜索联系人
-
-在联系人列表上方的搜索框中输入用户名，即可实时过滤联系人。
-
-### 发送消息
-
-- **在对话中回复**：在对话底部的输入框中输入内容，点击"发送"或按 <kbd>Ctrl</kbd>+<kbd>Enter</kbd>
-- **发起新对话**：点击"发新消息"按钮，填写收件人用户名和消息内容
-
-### 发送图片
-
-在消息输入框中，按 <kbd>Ctrl</kbd>+<kbd>V</kbd> 粘贴图片，系统会自动上传并插入图片链接。
-
-### 切换主题
-
-点击右上角的主题切换按钮，可以在**浅色**、**深色**、**自动（跟随系统）** 三种模式间切换。
-
-## 注意事项
-
-- `PHPSESSID` 是您的登录凭据，**请勿泄露给他人**
-- 该页面数据保存在浏览器本地存储中，清除浏览器数据会导致需要重新登录
-- 消息发送依赖 XMOJ 后端 API，网络异常时可能发送失败，请重试
+- 登录信息保存在你的浏览器里。清除浏览器数据后要重新登录。
+- 在小明的OJ上退出登录，`PHPSESSID` 就失效了，这里也要重新登录。
+- 短消息存在 XMOJ-Script 的服务器上，加密保存。详见[隐私说明](https://www.xmoj-script.uk/privacy.html)。

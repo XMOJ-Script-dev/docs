@@ -361,6 +361,7 @@ kbd {
 .rating.green { color: #2b9f4f; }
 .rating.cyan { color: #1798b0; }
 .rating.gray { color: #78828c; }
+.rating.violet { color: #a855f7; }
 
 /* 页脚与大纲 */
 .VPFooter {

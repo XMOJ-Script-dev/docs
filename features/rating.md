@@ -99,6 +99,8 @@ $$\text{评分} = \operatorname{round}\left(3000 \times \left(0.57 \cdot \text{�
 | <span class="rating cyan">青</span> | 800–1199 |
 | <span class="rating gray">灰</span> | 低于 800 |
 
+<span class="rating violet">紫色</span>留给脚本管理员，不代表评分。管理员的用户名总是显示为紫色，鼠标悬停时会提示「脚本管理员」，不再单独显示「脚本管理员」徽章。
+
 ## 在哪里显示
 
 - 讨论区的帖子和回复

@@ -356,7 +356,7 @@ kbd {
 
 /* 与脚本中的用户名颜色一致，浅色和深色模式共用一套颜色 */
 .rating.red { color: #dc2f5a; }
-.rating.orange { color: #d9730d; }
+.rating.orange { color: #e8590c; }
 .rating.blue { color: #337cf2; }
 .rating.green { color: #2b9f4f; }
 .rating.cyan { color: #1798b0; }

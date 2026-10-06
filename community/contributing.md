@@ -13,16 +13,23 @@
 | 分支 | 用途 |
 |------|------|
 | `master` | 正式版，不接受 PR |
-| `dev` | 开发分支，只接受项目成员的 PR |
-| `extern-contrib` | **外部贡献者请提到这里** |
+| `dev` | 开发分支，**所有 PR 都提到这里** |
+
+外部贡献者先在 GitHub 上 fork 本仓库，然后：
 
 ```bash
-git checkout -b my-fix origin/extern-contrib
+git clone https://github.com/<你的用户名>/XMOJ-Script.git
+cd XMOJ-Script
+git remote add upstream https://github.com/XMOJ-Script-dev/XMOJ-Script.git
+git fetch upstream && git checkout -b my-fix upstream/dev
 # 改代码、在浏览器里测试……
-git fetch origin && git merge origin/extern-contrib   # 提 PR 前先合并最新代码
+git fetch upstream && git merge upstream/dev   # 提 PR 前先合并最新代码
+git push -u origin my-fix
 ```
 
-提到 `master` 或 `dev` 的外部 PR 会被关掉。
+再从你的 fork 向本仓库的 `dev` 提 PR。第一次提 PR 时，测试等 CI 要等维护者批准后才会运行，之后的 PR 会自动运行。版本号和更新记录由维护者和 CI 处理。
+
+提到 `master` 的 PR 会被关掉。
 
 ## 代码风格
 

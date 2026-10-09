@@ -41,8 +41,4 @@ features:
     details: 不装脚本也能在手机上收发小明的OJ短消息。
     link: /apps/messages
     linkText: 打开
-  - title: ELXMOJ 桌面客户端
-    details: 内置脚本的桌面应用，不用装浏览器扩展。支持 Windows、macOS 和 Linux。
-    link: /apps/elxmoj
-    linkText: 下载
 ---

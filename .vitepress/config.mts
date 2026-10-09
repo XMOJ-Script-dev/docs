@@ -61,7 +61,6 @@ export default defineConfig({
         text: '配套应用',
         items: [
           { text: '短消息在线看', link: '/apps/messages' },
-          { text: 'ELXMOJ 桌面客户端', link: '/apps/elxmoj' },
         ],
       },
       { text: '常见问题', link: '/qa/discussion' },
@@ -89,7 +88,6 @@ export default defineConfig({
         text: '配套应用',
         items: [
           { text: '短消息在线看', link: '/apps/messages' },
-          { text: 'ELXMOJ 桌面客户端', link: '/apps/elxmoj' },
         ],
       },
       {

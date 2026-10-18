@@ -382,3 +382,14 @@ kbd {
 .vp-doc img {
   border: 1px solid var(--mono-gray-300);
 }
+
+/* 评分页的图表（内联 SVG，颜色取主题变量，随深浅色切换） */
+.rating-chart-figure {
+  margin: 24px 0;
+}
+
+.rating-chart-figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}

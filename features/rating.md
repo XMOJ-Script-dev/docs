@@ -1,3 +1,14 @@
+<script setup>
+import dailyAc from './charts/rating-daily-ac.svg?raw'
+import volume from './charts/rating-volume.svg?raw'
+import accuracy from './charts/rating-accuracy.svg?raw'
+import confidence from './charts/rating-confidence.svg?raw'
+import persistence from './charts/rating-persistence.svg?raw'
+import overall from './charts/rating-overall.svg?raw'
+</script>
+
+<!-- 图表由 scripts/rating_charts.py 生成，修改公式后请重新运行 -->
+
 # 用户评分
 
 开启「添加用户评分和用户名颜色」后，用户名会按评分显示颜色，个人主页上也会显示具体分数。
@@ -37,7 +48,11 @@ $$g(a) = \begin{cases} a & a \le 8 \\ 8 + 8 \ln\left(1 + \dfrac{a - 8}{8}\right)
 
 没有 AC 记录时 $B = 1$。$B$ 是一个 0–1 之间的折扣，正常练习和比赛时基本等于 1。
 
+<figure class="rating-chart-figure" v-html="dailyAc"></figure>
+
 $$\text{做题量} = 1 - e^{-S B / 350}$$
+
+<figure class="rating-chart-figure" v-html="volume"></figure>
 
 做到几百题以后，继续刷题的收益会越来越小。要拿高分，还得靠准确度。
 
@@ -53,13 +68,19 @@ AC 之后重复提交 AC 代码既不增加 $S$ 也不增加 $X$，对评分没�
 
 $$\text{准确度} = \begin{cases} 0 & P < 0.15 \\ \dfrac{P - 0.15}{0.25} & 0.15 \le P < 0.4 \\ 1 & 0.4 \le P < 0.55 \\ \max\left(0.3,\ 1 - 2(P - 0.55)\right) & P \ge 0.55 \end{cases}$$
 
+<figure class="rating-chart-figure" v-html="accuracy"></figure>
+
 题做得越多，准确度越可信，所以它还要乘上可信度：
 
 $$K = \frac{S}{S + 80}$$
 
+<figure class="rating-chart-figure" v-html="confidence"></figure>
+
 ### 坚持度
 
 $$\text{坚持度} = 1 - e^{-D/250}$$
+
+<figure class="rating-chart-figure" v-html="persistence"></figure>
 
 ### 合在一起
 
@@ -85,6 +106,8 @@ $$\text{评分} = \operatorname{round}\left(3000 \times \left(0.57 \cdot \text{�
 | E | 解决 150 题，平均每题失败 3 次 | <span class="rating cyan">1024</span> |
 | F | 和 D 一样，但每天 AC 50 题 | <span class="rating cyan">905</span> |
 | G | 新用户，解决 20 题，平均每题失败 3 次 | <span class="rating gray">246</span> |
+
+<figure class="rating-chart-figure" v-html="overall"></figure>
 
 评分在浏览器里缓存一天，所以今天的提交通常明天才会反映出来。
 
